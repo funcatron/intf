@@ -155,6 +155,7 @@ public class ContextImpl implements Context, Accumulator {
     }
 
     public static void addOperation(String name, BiFunction<Map<Object, Object>, Logger, Object> func) {
+        System.out.println("Adding operation "+name+"\n\n");
         operations.put(name, func);
     }
 
